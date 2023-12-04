@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap");
+
+@font-face {
+  font-family: myfont;
+  src: url(./font/OldNewspaperTypes.ttf);
+}
+
+@font-face {
+  font-family: myfont1;
+  src: url(./font/Corleone.TTF);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  letter-spacing: 2px;
+  display: flex;
+  font-family: Roboto Mono, sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2edf7;
+}
+
+.container {
+  width: 480px;
+  height: 630px;
+  background: white;
+  box-shadow: 15px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form */
+form {
+  width: 90%;
+}
+
+.form-group {
+  height: 65px;
+}
+
+label {
+  position: relative;
+  bottom: 3px;
+}
+
+input {
+  width: 100%;
+  height: 34px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  font-family: Roboto Mono, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+button:hover {
+  filter: brightness(200%);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0.1rem 4px rgba(20, 18, 18, 0.6);
+  animation: myAnim 2s ease 1s 3 normal forwards;
+}
+
+.message-container {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: myfont;
+  font-size: 20px;
+  animation: myAnim 2s ease 1s 3 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
