@@ -58,7 +58,7 @@
             type="url"
             id="website"
             name="website"
-            placeholder="https://github.com/houssamouhra"
+            placeholder="https://github.com/"
             required
           />
         </div>
@@ -71,7 +71,7 @@
             name="password"
             placeholder="Create Password(Min. 8 characters)"
             required
-            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#@$!%*^?&])[A-Za-z\d@#$!%*?&^]{8,20}$"
             title="Please include Minimum eight characters, at least one letter, one number and one special character"
           />
         </div>
@@ -81,10 +81,9 @@
           <input
             type="password"
             id="password2"
-            name="password"
             placeholder="Comfirm Password"
             required
-            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#@$!%*^?&])[A-Za-z\d@#$!%*?&^]{8,20}$"
           />
         </div>
         <!-- submit Buttons -->
