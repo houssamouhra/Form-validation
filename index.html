@@ -71,7 +71,7 @@
             name="password"
             placeholder="Create Password(Min. 8 characters)"
             required
-            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#@$!%*^?&])[A-Za-z\d@#$!%*?&^]{8,20}$"
+            pattern="^(?:(?=.*[a-z])(?:(?=.*[A-Z])(?=.*[\d\W])|(?=.*\W)(?=.*\d))|(?=.*\W)(?=.*[A-Z])(?=.*\d)).{8,}$"
             title="Please include Minimum eight characters, at least one letter, one number and one special character"
           />
         </div>
@@ -83,7 +83,7 @@
             id="password2"
             placeholder="Comfirm Password"
             required
-            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#@$!%*^?&])[A-Za-z\d@#$!%*?&^]{8,20}$"
+            pattern="^(?:(?=.*[a-z])(?:(?=.*[A-Z])(?=.*[\d\W])|(?=.*\W)(?=.*\d))|(?=.*\W)(?=.*[A-Z])(?=.*\d)).{8,}$"
           />
         </div>
         <!-- submit Buttons -->
